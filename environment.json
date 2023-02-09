@@ -1,0 +1,32 @@
+{
+    "requirements": {
+        "VMware Workstation": "<path to Vmware Workstation directory>",
+        "environment.json": "<path to environment.json file>",
+        "VirtualMachines": {
+            "<name>": "<path to .vmx>"
+        }
+    },
+    "lab": [
+        {
+            "VirtualMachines":[
+                {
+                    "name": "<name>",
+                    "vmx": "<path to .vmx>"
+                }
+            ]
+        }
+    ],
+    "scenarios": [
+        {
+            "name": "reset",
+            "description": "Reset lab",
+            "snapshots": [
+                {
+                    "name": "<name>",
+                    "vmx": "<path to vmx>",
+                    "snapshot": "<reset snapshot name>"
+                }
+            ]
+        }
+    ]
+}
